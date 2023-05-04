@@ -1,11 +1,9 @@
-
-import { useDispatch, useSelector } from 'react-redux'
 import styles from './RecipeItem.module.css'
-import { actions } from '../store/favorites/favorites.slice'
-import { useActions } from '../hooks/useActions'
+import { useActions } from '../../hooks/useActions'
+import { useFavoites } from '../../hooks/useFavorites'
 
 function RecipeItem({ recipe }) {
-    const { favorites } = useSelector(state => state)
+    const { favorites } = useFavoites()
 
     const { toggleFavorites } = useActions()
 
