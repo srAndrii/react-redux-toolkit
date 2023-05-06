@@ -12,6 +12,7 @@ function RecipeItem({ recipe }) {
     console.log(favorites)
     return (
         <div className={styles.item}>
+            <img src={recipe.image} alt={recipe.name} width={150} />
             <h3>{recipe.name}</h3>
             <button onClick={() => toggleFavorites(recipe)}>{isExists ? 'Remove from' : 'Add to'} favorites</button>
         </div>
