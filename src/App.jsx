@@ -1,3 +1,4 @@
+import CreateRecipe from "./components/create-recipe/CreateRecipe";
 import Header from "./components/header/Header";
 import RecipeItem from "./components/recipe-item/RecipeItem";
 import User from "./components/user/User";
@@ -10,6 +11,7 @@ function App() {
     return (
         <section>
             <Header />
+            <CreateRecipe />
             {/* <User /> */}
             <div>
                 {isLoading ? (
