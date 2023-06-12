@@ -9,7 +9,7 @@ function RecipeItem({ recipe }) {
 
     const isExists = favorites.some(r => r.id === recipe.id)
 
-    console.log(favorites)
+    // console.log(favorites)
     return (
         <div className={styles.item}>
             <img src={recipe.image} alt={recipe.name} width={150} />
